@@ -18,14 +18,14 @@ body {
 
 h1 {
   position: absolute; 
-  top: 554px; 
-  left: 230px; 
+  top: 67%;
+  left: 15%;
   color: red;
   font-size: 2rem;
 }
 
 .dialogue {
   position: absolute;
-  top: 630px; 
-  left: 230px; 
+  top: 76%;
+  left: 15%;
 }
