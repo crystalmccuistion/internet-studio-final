@@ -5,12 +5,27 @@ html {
 
 body {
     margin: 1rem;
-    background: url("../scenes/mockup_scene.jpg");
+    background: url("../img/BG_GrayWithUI.png");
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: whitesmoke; 
-    font-size: 5rem;
+    font-size: 2rem;
+    font-family: Arial; 
     overflow: hidden;
+}
+
+h1 {
+  position: absolute; 
+  top: 554px; 
+  left: 230px; 
+  color: red;
+  font-size: 2rem;
+}
+
+.dialogue {
+  position: absolute;
+  top: 630px; 
+  left: 230px; 
 }
