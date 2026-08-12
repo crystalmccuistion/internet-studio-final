@@ -1,3 +1,7 @@
+window.addEventListener('click', function(event) {
+    console.log('YOU CLICKED.');
+}, { capture: true });
+
 function Game() {
   this.character_names = ['ExampleName1', 'ExampleName2'],
   this.run = function() {
