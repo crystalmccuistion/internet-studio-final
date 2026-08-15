@@ -18,7 +18,7 @@ body {
 
 h1 {
   position: absolute; 
-  top: 67%;
+  top: 64.2%;
   left: 15%;
   color: red;
   font-size: 2rem;
@@ -26,14 +26,18 @@ h1 {
 
 .dialogue {
   position: absolute;
-  top: 76%;
+  top: 73%;
   left: 15%;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: red;
+  width: 70%;
 }
 
 .dialoguebox {
   position: absolute;
   width: 74.1%;
   height: auto;
-  top: 68.65%;
+  top: 65.55%;
   left: 13%;
 }
