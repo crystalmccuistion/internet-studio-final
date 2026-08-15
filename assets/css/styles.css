@@ -28,9 +28,6 @@ h1 {
   position: absolute;
   top: 73%;
   left: 15%;
-  border: 1px solid;
-  border-radius: 5px;
-  border-color: red;
   width: 70%;
 }
 
