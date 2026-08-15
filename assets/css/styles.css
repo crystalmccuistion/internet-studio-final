@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 1rem;
-    background: url("../img/BG_GrayWithUI.png");
+    background: url("../img/BG_Gray.png");
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,6 +32,8 @@ h1 {
 
 .dialoguebox {
   position: absolute;
-  top: 76%;
-  left: 15%;
+  width: 74.1%;
+  height: auto;
+  top: 68.65%;
+  left: 13%;
 }
