@@ -29,6 +29,7 @@ h1 {
   top: 73%;
   left: 15%;
   width: 70%;
+  border: 1px solid red;
 }
 
 .dialoguebox {

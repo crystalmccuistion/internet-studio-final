@@ -29,28 +29,37 @@ class Scene {
 // Game instance object
 class Game {
   constructor() {
-    this.character_names = ['ExampleName1', 'ExampleName2'];
-
     this.run = function () {
-      this.index_dialogue();
-      this.hide_dialogue();
-      this.addClickListener();
+      // setup
+      this.index_text();
+      this.hide_text();
+      this.add_click_listener();
+      // page 1
+      this.show_speaker("m");
     };
 
-    this.index_dialogue = function () {
+    this.index_text = function () {
+      // speakers
+      this.speakers = document.querySelectorAll(".speaker");
+      // dialogue
       this.dialogue_list = document.querySelectorAll(".dialogue");
       console.log("pages of dialogue = " + this.dialogue_list.length);
     };
 
-    this.hide_dialogue = function () {
+    this.hide_text = function () {
+      // hide dialogue
       for (let i = 1; i <= this.dialogue_list.length; i++) {
         this.dialogue_list[i - 1].style.display = "none";
-        // show first page of dialogue
-        this.dialogue_list[0].style.display = "block";
+      // show dialogue for first page
+      this.dialogue_list[0].style.display = "block";
+      }
+      // hide speakers
+      for (let i = 1; i <= this.speakers.length; i++) {
+        this.speakers[i - 1].style.display = "none";
       }
     };
 
-    this.addClickListener = function () {
+    this.add_click_listener = function () {
       let current_page_num = 1;
       document.addEventListener('click', function (event) {
         current_page_num++;
@@ -66,6 +75,13 @@ class Game {
       console.log('go to page ' + page_num);
       this.dialogue_list[page_num - 2].style.display = "none";
       this.dialogue_list[page_num - 1].style.display = "block";
+    };
+
+    this.show_speaker = function (speaker_id) {
+      let speaker = document.getElementById(speaker_id);
+      if (speaker) {
+        speaker.style.display = "block";
+      }
     };
   }
 };
