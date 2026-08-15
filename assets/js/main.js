@@ -1,4 +1,32 @@
-// game instance
+// Page object
+class Page {
+  constructor() {
+    this.dialogue = "";
+    this.speaker = null;
+    this.scene = null;
+    this.characters = [];
+  }
+}
+
+// Sprite object
+class Sprite {
+  constructor() {
+    this.character = null;
+    this.description = "";
+    this.image = "";
+    this.position = { x: 0, y: 0 };
+  }
+}
+// Scene object
+class Scene {
+  constructor() {
+    this.name = "";
+    this.music = null;
+    this.background = null;
+  }
+}
+
+// Game instance object
 class Game {
   constructor() {
     this.character_names = ['ExampleName1', 'ExampleName2'];
