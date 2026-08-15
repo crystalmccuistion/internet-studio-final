@@ -16,6 +16,8 @@ function Game() {
   this.hide_dialogue = function() {
     for (let i = 1; i <= this.dialogue_list.length; i++) {
       this.dialogue_list[i-1].style.display = "none";
+      // show first page of dialogue
+      this.dialogue_list[0].style.display = "block";
     }
   }
 
@@ -23,8 +25,18 @@ function Game() {
     let current_page_num = 1;
     document.addEventListener('click', function(event) {
       current_page_num ++;
-      console.log('go to page ' + current_page_num);
-    }, {capture: true});
+      this.goToPage(current_page_num);
+    }.bind(this), {capture: true});
+  }
+
+  this.goToPage = function(page_num) {
+    if (page_num > this.dialogue_list.length) {
+      console.log('the end');
+      return;
+    }
+      console.log('go to page ' + page_num);
+      this.dialogue_list[page_num-2].style.display = "none";
+      this.dialogue_list[page_num-1].style.display = "block";
   }
 };
 
