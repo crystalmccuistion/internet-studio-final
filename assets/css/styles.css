@@ -29,7 +29,7 @@ h1 {
   top: 73%;
   left: 15%;
   width: 70%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .dialoguebox {
@@ -38,4 +38,10 @@ h1 {
   height: auto;
   top: 65.55%;
   left: 13%;
+}
+
+.sprite {
+  position: absolute; 
+  width: 100%;
+  height: auto;
 }
